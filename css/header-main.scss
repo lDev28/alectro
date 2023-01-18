@@ -1,0 +1,135 @@
+.header {
+	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.527);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+	&__body {
+		height: 60px;
+		min-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	&__logo {
+		width: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&>img {
+			max-width: 100%;
+		}
+	}
+
+	&__burger {}
+
+	&__menu {
+		padding: 0;
+		display: flex;
+		flex-flow: row nowrap;
+
+		&>li {
+			list-style: none;
+			margin: auto 35px;
+		}
+	}
+
+
+	&__link {
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+	}
+
+	&__search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+	}
+
+}
+
+.main {
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url(../img/mainbg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	&__body {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__title {
+		margin: 0 auto 30px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 60px;
+		font-weight: 200;
+		line-height: 60px;
+		color: white;
+
+		&_bold {
+			font-weight: 700;
+		}
+	}
+
+	&__subtitle {
+		margin: 0 auto 30px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 60px;
+		color: white;
+	}
+
+	&__btn {
+		width: 180px;
+		height: 45px;
+		background-color: transparent;
+		border: 1px solid white;
+		border-radius: 23.5px;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 24px;
+		color: white;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #17daa3;
+			border: none;
+		}
+	}
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 48
+}
