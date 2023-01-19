@@ -1,0 +1,5 @@
+
+function setScrollEffects() {
+
+	const $aboutCard = 
+}

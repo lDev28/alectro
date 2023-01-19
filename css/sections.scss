@@ -1,3 +1,60 @@
+$maincolor: #17daa3;
+
+// SERVICES
+
+.services {
+	background-color: #f9f9fa;
+
+	&__title {}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__body {
+		margin: 0 0 100px 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__card {
+		width: 50%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__card-icon-block {
+		min-width: 95px;
+		min-height: 95px;
+		border-radius: 50%;
+		background-color: #fff;
+		color: $maincolor;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		font-size: 40px !important;
+	}
+
+	&__card-content {
+		margin: 0 0 0 20px;
+	}
+
+	&__card-title {}
+
+	&__card-subtitle {}
+}
+
+
+
+// MAP
+
 .map {
 
 	&__body {
@@ -23,8 +80,6 @@
 	&__subtitle {
 		margin: 0;
 	}
-
-	&__btn {}
 
 	&__map {
 		width: 50%;
@@ -61,6 +116,4 @@
 			font-weight: 700;
 		}
 	}
-
-	&__btn {}
 }
