@@ -34,11 +34,6 @@ body {
   padding: 0px 10px;
 }
 
-.scroll-nav {
-  height: 2px;
-  background-color: #17daa3;
-}
-
 .button {
   width: 180px;
   height: 40px;
@@ -69,12 +64,10 @@ body {
   from {
     bottom: 80px;
   }
-
   to {
     bottom: 50px;
   }
 }
-
 .scroll-btn-icon {
   font-size: 50px !important;
   color: #fff;
@@ -144,7 +137,7 @@ body {
   align-items: center;
 }
 
-.header__logo>img {
+.header__logo > img {
   max-width: 100%;
 }
 
@@ -154,7 +147,7 @@ body {
   flex-flow: row nowrap;
 }
 
-.header__menu>li {
+.header__menu > li {
   list-style: none;
   margin: auto 35px;
 }
@@ -262,7 +255,7 @@ body {
   align-items: center;
   text-align: center;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.8s;
 }
 
 .about__card.showen {
@@ -331,11 +324,11 @@ body {
   opacity: 0;
 }
 
-.about__slide:nth-child(odd)>.container {
+.about__slide:nth-child(odd) > .container {
   flex-flow: row-reverse nowrap;
 }
 
-.about__slide>.container {
+.about__slide > .container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -348,7 +341,7 @@ body {
   padding: 10px;
 }
 
-.about__slide-img>img {
+.about__slide-img > img {
   max-width: 100%;
   object-fit: cover;
 }
@@ -371,6 +364,14 @@ body {
   color: #87949e;
 }
 
+@media only screen and (max-width: 850px) {
+  .about__card {
+    width: 50%;
+  }
+  .about__cards {
+    flex-flow: row wrap;
+  }
+}
 .services {
   background-color: #f9f9fa;
 }
@@ -389,18 +390,10 @@ body {
 
 .services__card {
   width: 50%;
-  margin-top: 100px;
-  transition: .3s;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-}
-
-.services__card.showen {
-  margin-top: 0;
-  opacity: 1;
 }
 
 .services__card-icon-block {
@@ -450,7 +443,7 @@ body {
   width: 50%;
 }
 
-.map__map>img {
+.map__map > img {
   max-width: 100%;
 }
 
