@@ -107,6 +107,11 @@ body {
   color: #576671;
 }
 
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 46px;
+  }
+}
 .subtitle {
   margin: 30px auto;
   font-family: "Raleway", sans-serif;
@@ -277,7 +282,7 @@ body {
   height: 150px;
   border-radius: 50%;
   background-color: #edeff1;
-  color: #87949e;
+  transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,11 +291,14 @@ body {
 
 .about__icon-block:hover {
   background-color: #17daa3;
-  color: #fff;
+}
+.about__icon-block:hover .about__icon {
+  fill: #fff;
 }
 
 .about__icon {
-  font-size: 55px !important;
+  fill: #87949e;
+  transition: all 0.3s;
 }
 
 .about__card-title {
@@ -390,6 +398,7 @@ body {
 }
 
 .services__body {
+  width: 100%;
   margin: 0 0 100px 0;
   display: flex;
   flex-flow: row wrap;
@@ -399,10 +408,18 @@ body {
 
 .services__card {
   width: 50%;
+  margin: 100px 0 0 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.services__card.showen {
+  margin: 0;
+  opacity: 1;
 }
 
 .services__card-icon-block {
@@ -417,13 +434,14 @@ body {
 }
 
 .services__icon {
-  font-size: 40px !important;
+  fill: #39dfb0;
 }
 
-.services__card-content {
-  margin: 0 0 0 20px;
+@media only screen and (max-width: 850px) {
+  .services__body {
+    flex-flow: column;
+  }
 }
-
 .map__body {
   display: flex;
   flex-flow: row nowrap;

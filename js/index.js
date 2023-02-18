@@ -24,7 +24,7 @@ function setScrollEffects() {
 		const aboutElemPosition = aboutElemScroll.top - (aboutElemScroll.bottom - aboutElemScroll.top)
 
 
-		if (aboutElemPosition <= 150) {
+		if (aboutElemPosition <= 200) {
 			aboutElem.classList.add('showen')
 		} else {
 			aboutElem.classList.remove('showen')
@@ -43,7 +43,7 @@ function setScrollEffectsSlide() {
 		const aboutElemScroll = aboutSlide.getBoundingClientRect()
 		const aboutElemPosition = aboutElemScroll.top - (aboutElemScroll.bottom - aboutElemScroll.top)
 
-		if (aboutElemPosition <= 300) {
+		if (aboutElemPosition <= -50) {
 			aboutSlide.classList.add('showen')
 		} else {
 			aboutSlide.classList.remove('showen')
@@ -62,7 +62,7 @@ function setScrollEffectsServicesCard() {
 		const servicesElemPosition = servicesElemScroll.top - (servicesElemScroll.bottom - servicesElemScroll.top)
 
 
-		if (servicesElemPosition <= 300) {
+		if (servicesElemPosition <= 250) {
 			servicesElem.classList.add('showen')
 		} else {
 			servicesElem.classList.remove('showen')
